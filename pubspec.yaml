@@ -8,8 +8,11 @@ environment:
   flutter: '>=2.2.0'
 
 dependencies:
-  # Plugin for parsing html
-  html: ^0.15.3
+  # Overriding html package behavior
+  html:
+    git:
+      url: https://github.com/jon-edward/html.git
+      ref: main 
 
   # Plugin for parsing css
   csslib: ^0.17.2
