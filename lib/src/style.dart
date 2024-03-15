@@ -665,7 +665,7 @@ enum ListStyleType {
     return ListStyleType.values.firstWhere(
       (value) {
         return name == value.counterStyle;
-      }, orElse: () => decimal.counterStyle);
+      }, orElse: () => decimal);
   }
 }
 
