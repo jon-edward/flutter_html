@@ -662,9 +662,10 @@ enum ListStyleType {
   const ListStyleType(this.counterStyle);
 
   factory ListStyleType.fromName(String name) {
-    return ListStyleType.values.firstWhere((value) {
-      return name == value.counterStyle;
-    });
+    return ListStyleType.values.firstWhere(
+      (value) {
+        return name == value.counterStyle;
+      }, orElse: () => decimal.counterStyle);
   }
 }
 
